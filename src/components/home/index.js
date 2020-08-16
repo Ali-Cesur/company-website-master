@@ -1,10 +1,14 @@
 import React from 'react';
-import Jumbotron from './jumbotron';
+import Button from '@material-ui/core/Button';
+import { Box, ButtonBase, Typography } from '@material-ui/core';
+import math from '../../images/math.png';
 
 export default () => {
-    return (
-        <div>
-            <Jumbotron />
-        </div>
+    return (    
+        <Box>
+            <ButtonBase>
+                <img src={math}/>    
+            </ButtonBase>
+        </Box>
     )
 }

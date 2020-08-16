@@ -1,10 +1,10 @@
 import React from 'react';
+import { Box } from '@material-ui/core';
 
 export default () => {
     return (
-        <div>
-            <h2>Services Page</h2>
-            <p>Lorem ipsum goes here</p>
-        </div>
+        <Box>
+            asd
+        </Box>
     )
 }

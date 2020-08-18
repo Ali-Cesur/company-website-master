@@ -20,6 +20,8 @@ const navbar = () => {
                     <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
+                <Nav.Link as={Link} to="/log-in">Login</Nav.Link>
+
             </Nav>
             
         </Navbar>

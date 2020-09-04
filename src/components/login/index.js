@@ -10,6 +10,15 @@ const useStyles = makeStyles(() =>
             height:'300px',
             backgroundColor:'#D1FFD7',
         },
+
+        root_v2:{
+            marginTop:'50px',
+            backgroundColor:'white',
+            width: '100%',
+            height: '100%',
+            position:'relative',
+        },
+
         loginTitle:{
             backgroundColor:'#A6D3A0',
             width:'%100',
@@ -58,6 +67,21 @@ export default () => {
     const [password, setPassword] = useState("");
     const [confirmpass, setConfirmpass] = useState("");
 
+/*     var mysql = require('mysql');
+    var connection = mysql.createConnection({
+        host : 'localhost',
+        user : 'root',
+        password: '',
+        database: 'nodejs-test'
+    });
+
+    connection.connect(function(err){
+        if (err){
+            console.error('veri tabanina baglanirken hata: ' + err.stack);
+            return;
+        }
+    }); */
+
     function validateForm() {
         //console.log("geldi")
         //console.log(firstname,lasttname,contactnumber,email,password)
@@ -71,8 +95,10 @@ export default () => {
     }
 
 
+
+
     return (
-        <Box className={classes.root} >
+        <Box className={classes.root_v2} >
             <Box className={classes.loginTitle}>Account Registration</Box>
             <Box className={classes.loginScreen}>
                 <form className={classes.loginInfo} noValidate autoComplete="off">

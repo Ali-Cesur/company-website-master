@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 
 export default (props) => (
-    <Container>
+    <div style={{position:'relative', width:'100%'}}>
         { props.children }
-    </Container>
+    </div>
 );
